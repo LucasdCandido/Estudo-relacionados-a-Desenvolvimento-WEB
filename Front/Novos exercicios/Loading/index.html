@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOADING</title>
+    <!-- TAG style para poder fazer as configurações de CSS na pagina HTML -->
+    <style>
+        /* # para poder chamar o ID do elemento no HTML e loading no caso é o elemento com a id */
+        #loading {
+            /* border configura a borda do elemento no HTML que no caso ele tem uma expessura de 16px, cor vai ser solida e a cor vai ser cinza claro*/
+            border: 16px solid lightgray;
+            /* width é largura em ingles, que configura a largura que o elemento de HTML vai ocupar */
+            width: 128px;
+            /* height é altura em ingles, que configura a altura que o elemento de HTML vai ocupar*/
+            height: 128px;
+            /* border-top assim como a configuração border, faz uma configuração da borda do elemento, e nesse caso, da parte de cima do elemnto só, que no caso é de  16px, cor solida e verde*/
+            border-top: 16px solid green;
+            /* border-radius configura a curvatura das bordas, que aqui neste caso, esta em 50% para deixar a borda do elemento circular */
+            border-radius: 50%;
+            /* animation cria uma animação automatica e seta as especificações da animação, que no caso é spin, para ser ciruclar, 2s para dizer a duração para uma volta, linear, para dizer que vai ser uma direção só e infinite para dizer a duração das voltas, que no caso é sem fim */
+            animation: spin 2s linear infinite;
+        }
+        /* @keyframe é o direcionador da animação, que no caso usa a palavra chave spin para determinar as caracteristicas do spin, 0% sendo o inicio, transform é o indicador de como vai ser a ação e rotate(0deg) a orientação de quando começa e o final de 100% transform rotate(360deg) a orientação de quando finaliza o ciclo da animação*/
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg)
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- div é uma classificação de elemento vazio no HTML para ser preenchido seja com conteudo ou por configurações do CSS para executar alguma função ou ação, com o ID para poder identificar esse elemento em furutas configurações no CSS -->
+    <div id="loading"></div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem Personalizada</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <!-- header é uma div especifica para a parte superior da pagina -->
+    <header>
+        <!-- h1 é cabeçalho de maior prioridade -->
+        <h1>Contagem Personalizada</h1>
+    </header>
+    <!-- section é um elemento é uma seção vazia do HTML -->
+    <section>
+        <!-- div é um elemento do HTML que cria um espaço vizio semanticamente menor que a seção -->
+        <div>
+            <!-- pre é um paragrafo que preserva a configuração do texto, normalmente usado para quando o texto tem muitas variações sendo necessario preservar o formato do texto -->
+            <pre>
+            Digite os valores aqui:
+            
+                    <!-- input é um elemento de interação do HTML, no caso aqui sendo usado para registrar um numero para ser usado na finalidade de fazer um calculo -->
+            Inicio: <input type="number" name="inicio" id="inicio">
+            
+            
+            Final:  <input type="number" name="final" id="final">
+            
+            
+            Passo:  <input type="number" name="passo" id="passo">
+            <!-- nesse caso o input esta sendo ultilizado para realizar a atividade do JS para fazer a contagem de acordo com os inputs anteriores  -->
+            <input type="button" value="enviar" id="enviar" onclick="Calcular()">
+            </pre>
+        </div>
+        <div id="res">
+            <!-- p é uma teg de paragrafo -->
+            <p>Resultado...</p>
+        </div>
+    </section>
+    <footer>
+        <p>
+            &copy; Curso em Video
+        </p>
+    </footer>
+</body>
+</html>

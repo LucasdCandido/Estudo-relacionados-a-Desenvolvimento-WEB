@@ -1,0 +1,2 @@
+exercicio 1. Criar um site com saudação de bom dia, tarde ou noite, que muda de cor de acordo com o horario e foto no meio com titulo do horario.
+exercicio 2. Criar um site que verifica a idade da pessoa, calcula a idade da pessoa pelo ano de nascimento, verifica se é masculino ou feminino, faz a checagem dos dados para ver se foi colocado os dados corretos e traz uma foto condizente com a idade.

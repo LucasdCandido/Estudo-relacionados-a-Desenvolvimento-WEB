@@ -1,0 +1,32 @@
+/* body esta selecionando um elemento do HTML para setar conficurações que no caso é o background e a font do elemento */
+body {
+    background: rgb(70, 142, 236);
+    font: normal 15pt arial;
+}
+
+/* header esta selecionando um elemento dentro de body, para fazer uma configuração especifica diferente do body, no caso color para alterar a cor dos textos dentro de header e text-align para corrigir o alinhamento em linha do texto */
+header {
+    color: white;
+    text-align: center;
+}
+
+/* section assim como o header, esta fazendo uma configuração em um elemento dentro do body, para destacar das configurações do body, nesse caso background para altera a cor de fundo do elemento, border-radius para curvar as pontas do elemento, padding para mostrar a distancia entre o conteudo dentro do elemento da borda do elemento, width para especificar a largura do elemento, margin para fazer o alinhamento do elemento dentro da tela ou no caso dentro do body e box-shadow para poder criar uma sombra no elemento conforme a configuração especificada */
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 550px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.363);
+}
+
+select#flista {
+    width: 150px;
+}
+
+/* footer finaliza as configurações nesse arquivo, dentro de bofy ele também recebe configurações diferentes para a configuração dentro do bofy, color para alterar a cor da fonte, text-align para ajusar o alinhamento do texto e font-style para mudar ele de um texto normal para italic */
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Votos no Brasil</title>
+</head>
+<body>
+    <h1>Validação de votos!</h1>
+    <div id="data">
+
+    </div>
+    Qual sua idade? <input type="number" name="idade" id="idade">
+    <input type="button" value="validar" onclick="validador()">
+    <div id="res">
+
+    </div>
+    <script>
+        function validador() {
+            var idd = window.document.getElementById('idade')
+            var res = window.document.getElementById('res')
+            var ida = Number(idd.value)
+            if (ida <16) {
+                res.innerHTML = 'Você ainda não pode votar!'
+            } else if (ida < 18 || 65 < ida) {
+                res.innerHTML = 'Voto não é obrigatorio!'
+            } else {
+                res.innerHTML = 'Você é obrigado a votar!'
+            }
+        }
+        var agora = new Date()
+        var hora = agora.getHours()
+        var diaSem = agora.getDay()
+        switch(diaSem){
+            case 0:
+                data.innerHTML = 'Hoje é Domingo'
+                break
+            case 1:
+                data.innerHTML = 'Hoje é Segunda'
+                break
+            case 2:
+                data.innerHTML = 'Hoje é Terça'
+                break
+            case 3:
+                data.innerHTML = 'Hoje é Quarta'
+                break
+            case 4:
+                data.innerHTML = 'Hoje é Quinta'
+                break
+            case 5:
+                data.innerHTML = 'Hoje é Sexta'
+                break
+            case 6:
+                data.innerHTML = 'Hoje é Sabado'
+                break
+        }
+        data.innerHTML += `<br>Agora são exatamente ${hora} horas.`
+        if (hora < 12) {
+            data.innerHTML += `<br>Bom Dia!`
+        } else if (hora <= 18) {
+            data.innerHTML += `<br>Boa Tarde!`
+        } else {
+            data.innerHTML += `<br>Boa Noite!`
+        }
+    </script>
+</body>
+</html>

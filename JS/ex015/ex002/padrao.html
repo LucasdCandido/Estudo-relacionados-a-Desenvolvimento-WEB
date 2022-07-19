@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Taboada</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Tabela de Taboada</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Numero: <input type="number" name="txtn" id="txtn">
+                <input type="button" value="Gerar Tabuada" onclick="tabuada()">
+            </p>
+        </div>
+        <div>
+            <!-- select cria uma sessão de seleção de elementos, que no caso esta sendo ultilizado para apresentar o resultado da tabuada() com a propriedade setada para size=10 para apresentar 10 elementos no select -->
+            <select name="tabuada" id="seltab" size="10">
+                <!-- option entra como um elemento inicial do selection para não ficar como um elemento vazio de inicio -->
+                <option>Digite um número acima</option>
+            </select>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Curso em Video</p>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>

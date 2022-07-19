@@ -1,0 +1,48 @@
+<!-- Crie um site com exempo do exercicio 009
+
+
+var pais = 'EUA'
+console.log(`Vivendo em ${pais}`)
+if (pais == 'Brasil') {
+    console.log('Brasileira')
+} else {
+    console.log('Você é Estrangeiro')
+}
+
+
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMIGRAÇÃO</title>
+    <style>
+        body{
+            background: rgb(132,90,15);
+        }
+    </style>
+</head>
+<body>
+    <h1>Setor de IMIGRAÇÃO</h1>
+    Qual país você nasceu? <input type="text" name="pais" id="pais">
+    <input type="button" value="verificar" onclick="apresentar()">
+
+    <div id="res">
+
+    </div>
+    <script>
+        function apresentar() {
+            var ps = window.document.getElementById('pais')
+            var res = window.document.getElementById('res')
+            var pas = ps.value
+            if (pas == 'Brasil') {
+                res.innerHTML = `Já que você veio do Brasil você é Brasileiro/a`
+            } else {
+                res.innerHTML = `Aparentemente você é de fora do Brasil!`
+            }
+        }
+    </script>
+</body>
+</html>

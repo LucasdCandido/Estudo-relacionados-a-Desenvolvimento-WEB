@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'IDroid', 'no-serif';
+    src: url('fontes/IDroid.otf') format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(128, 230, 160);
+    text-align: center;
+    min-width: 657px;
+}
+#formato {
+    display: inline-block;
+}
+header {
+    background-color: darkgreen;
+    font-family: 'IDroid', 'no-serif';
+    color: white;
+    position: fixed;
+    width: 100%;
+    margin: -10px -8px;
+}
+#titulo {
+    
+    font-family: 'IDroid';
+    color: white;
+    text-align: center;
+}
+nav {
+    color: white;
+    text-align: left;
+    text-indent: 30px;
+}
+nav > a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+main {
+    background-color: white;
+    margin: 93px 40px;
+}
+footer {
+    background-color: green;
+}
+h1 {
+    font-family: 'IDroid';
+    color: darkgreen;
+    text-align: left;
+    margin: 15px;
+}
+h2 {
+    background-image: linear-gradient(to right, rgb(128, 230, 160), rgba(255, 255, 255, 0) );
+    margin: 15px;
+    color: darkgreen;
+    text-align: left;
+    text-indent: 10px;
+}
+.imagem {
+    width: 0 auto;
+}
+#video {
+    background-color: darkgreen;
+    margin: -106px 40px 19px 40px;
+}
+#corpo {
+    background-color: greenyellow;
+    margin: 8px 40px;
+    border-radius: 8px;
+}
+#topo {
+    background-color: darkgreen;
+    border-radius: 8px 8px 0px 0px;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.destaque {
+    color: darkgreen;
+    font-weight: bold;
+}
+
+#curiosidade {
+    background-color: white;
+    margin: -20px 40px 0px 40px;
+    padding-top: 2px;
+}
+
+#versoes {
+    display: inline-flex;
+    text-align: left;
+}
+
+ul {
+    list-style: none;
+}
+
+.item {
+    position: relative;
+}
+.item::before {
+    content: '✓ ';
+    position: relative;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    margin-right: 3px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+    margin: 0px 20px;
+}

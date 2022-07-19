@@ -1,0 +1,45 @@
+/* * é um seletor universal do CSS para setar configurações para todas as tags do HTML */
+*{
+    /* margin da forma como esta setada, faz configuração para todos os lados da margin */
+    margin: 0;
+    /* padding é configuração para a distancia entre a borda do elemento para o seu conteudo */
+    padding: 0;
+    /* outline é uma borda extrena do elemento, depois da borda do elemento */
+    outline: 0;
+    /* text-align faz o alinhamente do conteudo na linha, não do bloco de elementos completo */
+    text-align: center;
+}
+/* body seleciona o elemento body do HTML para fazer as configurações dentro do elemento */
+body{
+    /* background configura a cor do fundo do elemento */
+    background: rgba(98, 0, 255, 0.582);
+}
+/* section seleciona o elemento sectio do HTML para fazer as configurações dento do elemento */
+section{
+    background: white;
+    /* width configura a largura do elemento */
+    width: 100%;
+    /* border-radius configura a curvatura da borda dos elementos */
+    border-radius: 15px;
+    /* padding é o espaço entre o conteudo do elemento e sua borda */
+    padding: 15px;
+    width: 500px;
+    /* margin é o espaço a espaço entre a borda do elemento e o outline  */
+    margin: auto;
+    /* box-shadow é a configuração da sombra do elemento, podendo ser extrena e interna ou só externa ou só internet */
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+    /* font é a configuração de fonte do elemento, seja qual vai ser o peso, tamanho ou o tipo de fonte */
+    font: normal 16px arial;
+}
+/* pre esta selecionando o elemento pre do HTML para fazer configuração no elemento */
+pre{
+    /* text-align faz a configuração em linha do conteudo do elemento */
+    text-align: left;
+    /* margin-left altera a configuração da margim lateral esquerda do elemento */
+    margin-left: 1px;
+}
+/* footer seleciona o elemento inferior do HTML para fazer configurações nos elementos */
+footer{
+    /* margin-top faz configuração na margem supeior do elemento */
+    margin-top: 1vh;
+}

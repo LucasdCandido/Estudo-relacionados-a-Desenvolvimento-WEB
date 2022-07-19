@@ -1,0 +1,2 @@
+exercicio 1. criar um site para fazer uma contagem colocando emojis com js
+exercicio 2. criar um site que faz a tabuada de um numero

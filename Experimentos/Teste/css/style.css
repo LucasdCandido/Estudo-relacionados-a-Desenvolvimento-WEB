@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+body {
+    background-color: rgba(0, 255, 255, 0.541);
+}
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2pc;
+    font-weight: bolder;
+    font-style: italic;
+    color: blue;
+    background-color: aquamarine;
+}
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: rgb(63, 121, 207);
+    background-color: aquamarine;
+}

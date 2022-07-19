@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saudações</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js" defer></script>
+</head>
+<body id="corpo">
+    <header>
+        <h1>Checagem de idades!</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Em que ano você nasceu? <input type="number" name="idade" id="idade">
+            </p>
+            <p>
+                Qual o seu sexo? 
+                <input type="radio" name="radsex" id="masculino" checked>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="radsex" id="feminino">
+                <label for="feminino">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="enviar" onclick="carregar()">
+            </p>
+        </div>
+        <div id="res">
+            Preencha os dados acima para ver o resultado!
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Curso em Video</p> 
+    </footer>
+</body>
+</html>
